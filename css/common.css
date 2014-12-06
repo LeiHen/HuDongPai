@@ -33,6 +33,7 @@ a:link,a:visited,a:active{
 
 /* 公共样式 */
 .header{
+	/*padding: 30px 0 0 0;*/
 	height: 50px;
 	background: #000;
 	background: rgba(0,0,0,.9);
@@ -219,6 +220,58 @@ a:link,a:visited,a:active{
 
 /* 模块样式 */
 
+/* 框架模块 */
+.mod_wrap{
+	/*margin: 50px auto 0 auto;*/
+	padding: 50px 0 0 0;
+	height: 668px;
+
+}
+.mod_wrap .wrap{
+	/*background: red;*/
+}
+.mod_wrap .wrap .mod_wrap_head{
+	text-align: center;
+	position: relative;
+	margin: 0 0 40px 0;
+}
+.mod_wrap .wrap .mod_wrap_head .title{
+	font-size: 3em;
+	line-height: 1em;
+	color: #000;
+	text-align: center;
+	border-bottom:1px solid #838383; 
+
+	margin: 0;
+	padding:10px 80px;
+	
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+}
+.mod_wrap .wrap .mod_wrap_head .color_lump{
+	background:#000;
+	display: block;
+	height: 3px;
+	width: 30px;
+	left: 50%;
+
+	bottom: -1px;
+	margin: 0 0 0 -15px;
+	position: absolute;
+}
+
+.mod_wrap .wrap .mod_wrap_content{
+	
+}
+
+
+/* 按钮 */
+.mod_btn{
+	border: 2px solid #838383;
+}
+
+
 /* banner */
 .mod_banner{
 	width: 100%;
@@ -232,7 +285,7 @@ a:link,a:visited,a:active{
 }
 .mod_banner .imgs .list{
 	width: 25%;
-	height: 560px;
+	height: 668px;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -245,7 +298,7 @@ a:link,a:visited,a:active{
 	position: relative;
 	margin-left: -50%;
 	display: block;
-	height: 560px;
+	height: 668px;
 }
 .mod_banner .imgs .list .link .conter{
 	/*background: red;*/
@@ -282,7 +335,8 @@ a:link,a:visited,a:active{
 .mod_banner .banner_nav .list .link{
 	background: #fff;
 	border-radius:50%;
-	width: 14px;
+	/*width: 14px;*/
+	width: 0;
 	height: 0;
 
 	display: block;
@@ -297,8 +351,10 @@ a:link,a:visited,a:active{
 .mod_banner .banner_nav .list:hover{
 	
 }
-.mod_banner .banner_nav .list:hover .link{
+.mod_banner .banner_nav .list:hover .link,
+.mod_banner .banner_nav .hover .link{
 	height: 14px;
+	width: 14px;
 }
 
 /* QR */
@@ -404,7 +460,7 @@ a:link,a:visited,a:active{
 	
 	  过渡颜色
 
-	主标题大小
+	主标题大小 000000
 	副标题大小
 	  正文大小
 
