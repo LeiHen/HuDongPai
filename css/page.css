@@ -16,7 +16,7 @@
 	/*background: #000;*/
 	/*float: left;*/
 	display: inline-block;
-	width: 212.5px;
+	/*width: 212.5px;*/
 	width: 21.25%;
 
 	font-size: 10px;
@@ -139,6 +139,10 @@
 }
 
 .solution_index .content .lists .list .link:active .ico_wrap .origin .frame_l{
+	-webkit-transform:translate(-8px,0);
+	-moz-transform:translate(-8px,0);
+	-ms-transform:translate(-8px,0);
+	-o-transform:translate(-8px,0);
 	transform:translate(-8px,0);
 }
 .solution_index .content .lists .list .link:active .ico_wrap .ico{
@@ -243,10 +247,6 @@
 
 
 
-
-
-
-
 /*.product_index:hover .paiplus{
 	color: #fff;
 }*/
@@ -265,15 +265,19 @@
 .case_index .content .case .list{
 	float: left;
 	/*width: 300px;*/
-	width: 30%;
-	min-width: 300px;
-	/*max-width: ;*/
+	/*width: 30%;*/
+	width: 23%;
+	/*min-width: 180px;*/
+
 
 	/*margin: 0 0 0 50px;*/
-	margin: 0 0 20px 5%;
+	margin: 0 0 20px 2.66%;
 	
 }
-.case_index .content .case .list:nth-child(3n+1){
+.case_index .content .case .list:nth-child(4n+1){
+	margin: 0;
+}
+.case_index .content .case .cml{
 	margin: 0;
 }
 
@@ -300,9 +304,6 @@
 
 	opacity: 0;
 	filter: alpha(opacity=0);
-
-
-
 }
 
 .case_index .content .case .list .link .title_wrap .center_wrap{
@@ -387,8 +388,67 @@
 /* index 行业荣誉 */
 .honor_index{
 	height: 494px;
-	/*text-align: */
-	background: #f3f3f3;
+	/*background: #f3f3f3;*/
+	background:#e63232;
+	margin: 10px 0;
+}
+.honor_index .honor_lists{
+	font-size: 0;
+	text-align: center;
+	margin: 30px 0;
+}
+.honor_index .honor_lists .list{
+	display:inline-block;
+	+display:inline;
+	+zoom: 1;
+	width: 180px;
+/*	height: 100px;*/
+	margin: 0 0 0 20px;
+	vertical-align: top;
+	
+}
+.honor_index .honor_lists .list:first-child{
+	margin: 0;
+}
+.honor_index .honor_lists .list .img{
+	display: block;
+	width: 180px;
+	height: 100px;
+	background: #fff;
+}
+.honor_index .honor_lists .title{
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	height: 54px;
+}
+
+
+
+/* 新媒体 */
+.media_index{
+
+}
+
+.media_index .media_index_lists{
+	font-size: 0;
+	text-align: center;
+}
+.media_index .media_index_lists .list{
+	display:inline-block;
+	+display:inline;
+	+zoom: 1;
+	width: 180px;
+	height: 100px;
+	margin: 0 0 0 20px;
+}
+.media_index .media_index_lists .list:first-child{
+	margin: 0;
+}
+.media_index .media_index_lists .list .img{
+	display: block;
+	width: 180px;
+	height: 100px;
 }
 
 
@@ -434,6 +494,7 @@
 	  正文大小
 
 		  红色 e7000a
+		  浅红 e63232
 
 		  深灰 3b3b3b
 

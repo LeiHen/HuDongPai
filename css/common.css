@@ -265,10 +265,127 @@ a:link,a:visited,a:active{
 	
 }
 
+/* 扩展白色 */
+.ext_wrap_white{
+	color: #fff;
+}
+.ext_wrap_white .wrap{
+
+}
+.ext_wrap_white .wrap .mod_wrap_head{
+
+}
+.ext_wrap_white .wrap .mod_wrap_head .title{
+	color: #fff;
+	/*border-bottom: 1px solid #fff;*/
+}
+.ext_wrap_white .wrap .mod_wrap_head .color_lump{
+	background: #fff;
+}
+
 
 /* 按钮 */
 .mod_btn{
-	border: 2px solid #838383;
+	/*border: 2px solid #838383;*/
+	border: 2px solid #f3f3f3;
+	display: inline-block;
+	/*color: #838383;*/
+	padding: 14px 60px;
+	margin:  20px 10px;
+	position: relative;
+}
+.mod_btn .txt,
+.mod_btn .ico{
+	color: #838383;
+	font-size: 1.6em;
+	line-height: 1em;
+}
+
+.mod_btn .txt{
+	/*color: #838383;*/
+}
+.mod_btn .ico{
+	/*color: #838383;*/
+	/*vertical-align: top;*/
+}
+
+.mod_btn .wire{
+	background-color: #e63232;
+	position: absolute;
+}
+
+.mod_btn .wire_t,
+.mod_btn .wire_b{
+	height: 2px;
+	width: 0px;
+
+}
+
+.mod_btn .wire_l,
+.mod_btn .wire_r{
+	height: 0px;
+	width: 2px;
+}
+
+
+.mod_btn .wire_t{
+	top: -2px;
+	left: 0;
+	border-left:2px solid none;
+}	
+.mod_btn .wire_r{
+	/*top: 0;*/
+	bottom: -2px;
+	right: -2px;
+	border-bottom:2px solid none;
+}
+.mod_btn .wire_b{
+	bottom: -2px;
+	right: 0;
+	border-left:2px solid none;
+}
+.mod_btn .wire_l{
+	/*bottom: 0;*/
+	top: -2px;
+	left: -2px;
+	border-top:2px solid none;
+}
+
+.mod_btn:hover{
+	/*color:#e7000a;*/
+	/*border: 2px solid #e7000a;*/
+}
+
+.mod_btn:hover .txt,
+.mod_btn:hover .ico{
+	color: #e7000a;
+}
+
+.mod_btn:hover .wire{
+	background: #e7000a;
+}
+
+.mod_btn:hover .wire_t,
+.mod_btn:hover .wire_b{
+	width: 100%;
+}
+
+.mod_btn:hover .wire_l,
+.mod_btn:hover .wire_r{
+	height: 100%;
+}
+
+.mod_btn:hover .wire_t{
+	border-left:2px solid #e7000a;
+}
+.mod_btn:hover .wire_b{
+	border-left:2px solid #e7000a;
+}
+.mod_btn:hover .wire_l{
+	border-top:2px solid #e7000a;
+}
+.mod_btn:hover .wire_r{
+	border-bottom:2px solid #e7000a;
 }
 
 
@@ -432,7 +549,11 @@ a:link,a:visited,a:active{
 .mod_QR,
 .mod_QR .ico,
 .mod_QR .title,
-.mod_QR .img{
+.mod_QR .img,
+.mod_btn,
+.mod_btn .txt,
+.mod_btn .ico,
+.mod_btn .wire{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
@@ -467,5 +588,6 @@ a:link,a:visited,a:active{
 		  红色 e7000a
 
 		  深灰 3b3b3b
+		  浅灰 f3f3f3
 
 */
