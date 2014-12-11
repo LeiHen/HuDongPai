@@ -263,18 +263,15 @@
 
 }
 .case_index .content .case .list{
-	float: left;
+	/*float: left;
+	width: 23%;
+	margin: 0 0 20px 2.66%;*/
 	/*width: 300px;*/
 	/*width: 30%;*/
-	width: 23%;
 	/*min-width: 180px;*/
-
-
 	/*margin: 0 0 0 50px;*/
-	margin: 0 0 20px 2.66%;
-	
 }
-.case_index .content .case .list:nth-child(4n+1){
+/*.case_index .content .case .list:nth-child(4n+1){
 	margin: 0;
 }
 .case_index .content .case .cml{
@@ -338,7 +335,6 @@
 	transition:all 0.4s ease-out 0.4s;
 	padding: 10px 0;
 	top:209px;
-	/*margin-bottom: 100%;*/
 }
 
 
@@ -376,12 +372,12 @@
 
 
 .case_index .content .case .list .link .title_wrap .title{
-	/*transition:all 0.4s ease-out 0.8s;*/
+
 
 }
 .case_index .content .case .list .link .title_wrap .ico{
-	/*transition:all 0.4s ease-out 0.8s;*/
-}
+
+}*/
 
 
 
@@ -425,7 +421,7 @@
 
 
 
-/* 新媒体 */
+/* index 新媒体 */
 .media_index{
 
 }
@@ -452,6 +448,43 @@
 }
 
 
+/* sub 解决方案 */
+
+/* 微博话题营销 */
+.solution_weibo{
+
+}
+.solution_weibo .content{
+	
+}
+.solution_weibo .content .list_wrap{
+	
+}
+.solution_weibo .content .list_wrap .list{
+	
+}
+.solution_weibo .content .list_wrap .list .ico{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* css3动画 */
 .solution_index .content .lists .list .link,
@@ -461,7 +494,8 @@
 .case_index .content .case .list .link,
 .case_index .content .case .list .link .img,
 .case_index .content .case .list .link .title_wrap,
-.product_index .detail{
+.product_index .detail,
+.nav_sub{
 	transition:all .4s ease-out;
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
