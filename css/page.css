@@ -245,8 +245,6 @@
 	filter: alpha(opacity=100);
 }
 
-
-
 /*.product_index:hover .paiplus{
 	color: #fff;
 }*/
@@ -263,122 +261,8 @@
 
 }
 .case_index .content .case .list{
-	/*float: left;
-	width: 23%;
-	margin: 0 0 20px 2.66%;*/
-	/*width: 300px;*/
-	/*width: 30%;*/
-	/*min-width: 180px;*/
-	/*margin: 0 0 0 50px;*/
-}
-/*.case_index .content .case .list:nth-child(4n+1){
-	margin: 0;
-}
-.case_index .content .case .cml{
-	margin: 0;
-}
-
-.case_index .content .case .list .link{
-	border: 1px solid #838383;
-	border: 0.1% solid #838383;
-	position: relative;
-	display: block;
-	border-radius: 6px;
-	overflow: hidden;
-}
-.case_index .content .case .list .link .img{
-	display: block;
-	width: 99.9%;
-}
-.case_index .content .case .list .link .title_wrap{
-	position: absolute;
-	border-radius: 6px;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(231,0,10,.8);
-	top: 0;
-	text-align: center;
-
-	opacity: 0;
-	filter: alpha(opacity=0);
-}
-
-.case_index .content .case .list .link .title_wrap .center_wrap{
-	position: relative;
-	height: 100%;
-	display:table;
-	width: 100%;
-}
-.case_index .content .case .list .link .title_wrap .center_wrap .center_wrap_pa{
-	display:table-cell;
-	vertical-align: middle;
-}
-.case_index .content .case .list .link .title_wrap .title{
-	font-size: 1.8em;
-	-webkit-transition:all 0.4s ease-out 0.2s;
-	-moz-transition:all 0.4s ease-out 0.2s;
-	-mns-transition:all 0.4s ease-out 0.2s;
-	-o-transition:all 0.4s ease-out 0.2s;
-	transition:all 0.4s ease-out 0.2s;
-
-	position: relative;
-	top:-209px;
-}
-.case_index .content .case .list .link .title_wrap .ico{
-	font-size: 3em;
-	display: block;
-	position: relative;
-	-webkit-transition:all 0.4s ease-out 0.4s;
-	-moz-transition:all 0.4s ease-out 0.4s;
-	-ms-transition:all 0.4s ease-out 0.4s;
-	-o-transition:all 0.4s ease-out 0.4s;
-	transition:all 0.4s ease-out 0.4s;
-	padding: 10px 0;
-	top:209px;
-}
-
-
-
-.case_index .content .case .list .link:hover {
 
 }
-.case_index .content .case .list .link:hover .img{
-
-}
-.case_index .content .case .list .link:hover .title_wrap{
-	opacity:1;
-	filter: alpha(opacity=100);
-}
-.case_index .content .case .list .link:hover .title_wrap .center{
-
-}
-.case_index .content .case .list .link:hover .title_wrap .title,
-.case_index .content .case .list .link:hover .title_wrap .ico{
-	top: 0px;
-}
-.case_index .content .case .list .link .title_wrap .ico:hover{
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-	-webkit-transition:all 0.4s ease-out 0s;
-	-moz-transition:all 0.4s ease-out 0s;
-	-ms-transition:all 0.4s ease-out 0s;
-	-o-transition:all 0.4s ease-out 0s;
-	transition:all 0.4s ease-out 0s;
-}
-
-
-
-.case_index .content .case .list .link .title_wrap .title{
-
-
-}
-.case_index .content .case .list .link .title_wrap .ico{
-
-}*/
-
 
 
 /* index 行业荣誉 */
@@ -449,37 +333,172 @@
 
 
 /* sub 解决方案 */
+.solution_txtimg{
+
+}
+.solution_txtimg .content{
+	background-position: 88% center;
+	background-repeat: no-repeat;
+	margin: 0 0 50px 0; 
+}
+.solution_txtimg .list_wrap{
+	width: 59.8%;
+	margin: 20px 0 20px 2%;
+}
+.solution_txtimg .list_wrap .list{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.solution_txtimg .list_wrap .list .ico{
+	float: left;
+	display: block;
+	width: 50px;
+	font-size: 3em;
+	line-height: 50px;
+}
+.solution_txtimg .txtimg_title{
+	font-size: 18px;
+	color: #000;
+	line-height: 50px;
+}
+.solution_txtimg .txtimg_txt{
+	font-size: 1.4em;
+	line-height: 1.8em;
+	margin: 0 0 0 50px;
+}
+
+.solution_txtimg .list_wrap .list:hover{
+
+}
+.solution_txtimg .list_wrap .list:hover .ico{
+	color: #e7000a;
+	-webkit-transform:translate(8px,0);
+	-moz-transform:translate(8px,0);
+	-ms-transform:translate(8px,0);
+	-o-transform:translate(8px,0);
+	transform:translate(8px,0);
+}
+
+.ext_solution_imgtxt{
+
+}
+.ext_solution_imgtxt .content{
+	background-position: 12% center;
+	background-repeat: no-repeat;
+	overflow: hidden; 
+}
+.ext_solution_imgtxt .list_wrap{
+	width: 59.8%;
+	float: right;
+	margin: 20px 2% 20px 0;
+}
+
 
 /* 微博话题营销 */
 .solution_weibo{
-
+	
 }
 .solution_weibo .content{
-	
-}
-.solution_weibo .content .list_wrap{
-	
-}
-.solution_weibo .content .list_wrap .list{
-	
-}
-.solution_weibo .content .list_wrap .list .ico{
-	
+	background-image: url(../images/wechat.png);
 }
 
 
+/* 微信互动营销 */
+.solution_wechat{
+	
+}
+.solution_wechat .content{
+	/*background: url(../images/wechat.png) no-repeat 88% center;*/
+}
+
+/* 社交整合营销 */
+.solution_social{
+	
+}
+.solution_social .content{
+
+}
+.solution_social .list_wrap{
+	/*margin: 20px 2%;*/
+	overflow: hidden;
+}
+.solution_social .list_wrap .list{
+	float: left;
+	width: 46%;
+
+	margin: 20px 2%;
+	overflow: hidden;
+	/*vertical-align: text-top;*/
+	
+}
+.solution_social .list_wrap .list:nth-child(2n+1){
+	clear: left;
+}
+.solution_social .list_wrap .clear_l{
+	clear: left;
+}
+
+.solution_social .list_wrap .listx1{
+	width: 92%;
+}
+
+.solution_social .list_wrap .list .ico{
+	float: left;
+	display: block;
+	width: 50px;
+	font-size: 3em;
+	line-height: 50px;
+}
+.solution_social .social_title{
+	font-size: 18px;
+	color: #000;
+	line-height: 50px;
+}
+.solution_social .social_txt{
+	font-size: 1.4em;
+	line-height: 1.8em;
+	margin: 0 0 0 50px;
+}
+
+.solution_social .list_wrap .list:hover{
+
+}
+.solution_social .list_wrap .list:hover .ico{
+	color: #e7000a;
+	-webkit-transform:translate(8px,0);
+	-moz-transform:translate(8px,0);
+	-ms-transform:translate(8px,0);
+	-o-transform:translate(8px,0);
+	transform:translate(8px,0);
+}
 
 
 
+/* 移动数字营销 */
+.solution_mobile{
+	/*width: auto;*/
+}
+.solution_mobile .content{
+	background-image: url(../images/mac.png);
+}
 
 
 
+/*  */
+.solution_social{
+
+}
+.solution_social{
+	
+}
+.solution_social{
+	
+}
 
 
-
-
-
-
+div.mod_wrap:target{
+	background: red;
+}
 
 
 
@@ -495,7 +514,10 @@
 .case_index .content .case .list .link .img,
 .case_index .content .case .list .link .title_wrap,
 .product_index .detail,
-.nav_sub{
+.nav_sub,
+.solution_txtimg .list_wrap .list,
+.solution_txtimg .list_wrap .list .ico,
+.solution_social .list_wrap .list .ico{
 	transition:all .4s ease-out;
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
@@ -513,23 +535,28 @@
     	背景色
     	点睛色
 
-
-	
 	  字体颜色 
 
-	主标题颜色 
-	副标题颜色 
+	主标题颜色 e7000a
+	副标题颜色 000
 	  正文颜色 838383
 	
 	  过渡颜色
 
-	主标题大小
-	副标题大小
-	  正文大小
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
 
 		  红色 e7000a
 		  浅红 e63232
 
 		  深灰 3b3b3b
+
+		  边距
+		内填充
 
 */

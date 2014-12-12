@@ -226,8 +226,7 @@ a:link,a:visited,a:active{
 .mod_wrap{
 	/*margin: 50px auto 0 auto;*/
 	padding: 50px 0 0 0;
-	height: 668px;
-
+	/*height: 668px;*/
 }
 .mod_wrap .wrap{
 	/*background: red;*/
@@ -273,7 +272,12 @@ a:link,a:visited,a:active{
 	
 }
 
-
+/*.ext_wrap_bggray{
+	background: #f3f3f3;
+}*/
+.ext_wrap_bggray:nth-child(2n+1){
+	background: #f3f3f3;
+}
 
 
 /* 扩展白色 */
@@ -294,6 +298,9 @@ a:link,a:visited,a:active{
 	background: #fff;
 }
 
+.ext_wrap_h{
+	height: 668px;
+}
 
 /*  */
 .mod_lists{
@@ -313,14 +320,8 @@ a:link,a:visited,a:active{
 	/*margin: 0 0 20px 2.66%;*/
 	/*margin: 0 0 20px 2.06%;*/
 	margin: 0 0 20px 1.596%;
-	
 }
-/*.mod_lists .list:nth-child(4n+1){
-	margin: 0;
-}
-.mod_lists .cml{
-	margin: 0;
-}*/
+
 
 .mod_lists .list .link{
 	border: 1px solid #838383;
