@@ -484,24 +484,46 @@
 
 
 
-/*  */
-.solution_social{
-
-}
-.solution_social{
-	
-}
-.solution_social{
-	
-}
-
-
-div.mod_wrap:target{
+/*div.mod_wrap:target{
 	background: red;
+}*/
+
+
+
+
+
+
+/* 平台产品 */
+
+/* 图文左右 */
+.mod_txtimg_pct50{
+
+}
+.mod_txtimg_pct50 .ul_wrap{
+	
+}
+.mod_txtimg_pct50 .ul_wrap .link{
+	
+}
+.mod_txtimg_pct50 .ul_wrap .link .img{
+	
+}
+.mod_txtimg_pct50 .ul_wrap .link .txt{
+	
+}
+.mod_txtimg_pct50 .ul_wrap .link .txt .title{
+	
+}
+.mod_txtimg_pct50 .ul_wrap .link .txt .detail{
+	
 }
 
+.ext_mod_imgtxt_pct50
 
 
+.platform{
+
+}
 
 
 
