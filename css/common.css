@@ -659,6 +659,8 @@ a:link,a:visited,a:active{
 }
 
 
+
+
 /* subBanner */
 .mod_banner_sub{
 	height: 668px;
@@ -675,6 +677,80 @@ a:link,a:visited,a:active{
 	margin-left:-50%;
 	/*margin-left:-960px; */
 }
+
+
+/* mod_banner_wper50 */
+.mod_banner_wper50{
+	width: 100%;
+	/*min-width: 1000px;*/
+	overflow: hidden;
+	position: relative;
+}
+
+.mod_banner_wper50 .imgs{
+	width: 400%;
+	overflow: hidden;
+}
+.mod_banner_wper50 .imgs .list{
+	width: 25%;
+	float: left;
+}
+
+.mod_banner_wper50 .imgs .list .img{
+	display: block;
+	width: 100%;
+	min-width: 100%;
+}
+
+.mod_banner_wper50 .banner_nav{
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	padding: 20px 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	font-size: 0;
+}
+.mod_banner_wper50 .banner_nav .list{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	background-color: rgba(0,0,0,.2);
+	margin: 0 10px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.mod_banner_wper50 .banner_nav .list .link{
+	background: #fff;
+	border-radius:50%;
+	/*width: 14px;*/
+	width: 0;
+	height: 0;
+
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	margin:auto;
+}
+.mod_banner_wper50 .banner_nav .list:hover{
+	
+}
+.mod_banner_wper50 .banner_nav .list:hover .link,
+.mod_banner_wper50 .banner_nav .hover .link{
+	height: 14px;
+	width: 14px;
+}
+
 
 
 /* 二级导航 */
@@ -775,7 +851,9 @@ a:link,a:visited,a:active{
 .mod_btn .wire,
 .mod_btn_lump,
 .mod_nav_sub .list,
-.mod_nav_sub .list .link{
+.mod_nav_sub .list .link,
+.mod_banner_wper50 .banner_nav .list,
+.mod_banner_wper50 .banner_nav .list .link{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

@@ -548,16 +548,69 @@
 .mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50{
 
 }
-/*.mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50 .img{
+.mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50 .img{
 	float: left;
 }
 .mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50 .txt{
 	float: right;
-}*/
+}
 
 .platform{
 
 }
+
+
+
+
+
+/* about */
+.about_company{
+
+}
+.about_company .content{
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.about_company .content .txt,
+.about_company .content .imgs_wrap{
+	margin: 20px 2%;
+	width: 46%;
+}
+
+.about_company .content .txt{
+	float: left;
+	height: 100%;
+	position: absolute;
+	display: block;
+	margin: 0 2%;
+}
+
+.about_company .content .txt .txt_center{
+	position: absolute;
+	left: 0;
+	right: 0
+	top:0;
+	bottom: 0;
+	margin: auto;
+}
+.about_company .content .txt .txt_center .detail{
+	font-size: 1.6em;
+	line-height: 1.8em;
+	text-indent: 2em;
+	position: relative;
+	margin-top:-50%;
+}
+
+
+
+
+.about_company .content .imgs_wrap{
+	float: right;
+}
+
+/* index */
 
 
 
