@@ -502,24 +502,58 @@
 .mod_txtimg_pct50 .ul_wrap{
 	
 }
-.mod_txtimg_pct50 .ul_wrap .link{
-	
+.mod_txtimg_pct50 .ul_wrap .list{
+	margin: 40px 2%;
+	border-top:2px solid #f3f3f3;
+	overflow: hidden;
 }
-.mod_txtimg_pct50 .ul_wrap .link .img{
-	
+.mod_txtimg_pct50 .ul_wrap .list:first-child{
+	border-top:none;
 }
-.mod_txtimg_pct50 .ul_wrap .link .txt{
+.mod_txtimg_pct50 .ul_wrap .list .img,
+.mod_txtimg_pct50 .ul_wrap .list .txt{
+	width: 46%;
 	
+	margin: 20px 0;
 }
-.mod_txtimg_pct50 .ul_wrap .link .txt .title{
-	
+.mod_txtimg_pct50 .ul_wrap .list .img{
+	display: block;
+	float: right;
 }
-.mod_txtimg_pct50 .ul_wrap .link .txt .detail{
-	
+.mod_txtimg_pct50 .ul_wrap .list .txt{
+	float: left;
 }
 
-.ext_mod_imgtxt_pct50
 
+
+.mod_txtimg_pct50 .ul_wrap .list .txt .title{
+	font-size: 3em;
+	line-height: 1.8em;
+	color: #e7000a;
+	margin: 0px 0 20px 0;
+}
+.mod_txtimg_pct50 .ul_wrap .list .txt .detail{
+	font-size: 1.4em;
+	line-height: 1.8em;
+}
+
+.mod_txtimg_pct50 .ul_wrap .list:nth-child(2n) .img{
+	float: left;
+}
+.mod_txtimg_pct50 .ul_wrap .list:nth-child(2n) .txt{
+	float: right;
+}
+
+
+.mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50{
+
+}
+/*.mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50 .img{
+	float: left;
+}
+.mod_txtimg_pct50 .ul_wrap .ext_mod_imgtxt_pct50 .txt{
+	float: right;
+}*/
 
 .platform{
 
@@ -576,6 +610,7 @@
 		  红色 e7000a
 		  浅红 e63232
 
+	      浅灰 f3f3f3
 		  深灰 3b3b3b
 
 		  边距
