@@ -560,12 +560,33 @@
 }
 
 
+/* news 新闻 */
+.news{
+	margin: 40px auto;
+}
+.news .mod_page{
+	margin: 0 5.6% 0 0;
+	text-align: right;
+}
+
+
+.news_media{
+
+}
+
+
+
+
+
+
+
+
 
 
 
 /* about */
 
-/* about  公司简介 */
+/* about  团队介绍 */
 .about_company{
 
 }
@@ -613,10 +634,17 @@
 .about_team{
 
 }
-
-.about_team .ext_lists_square .list{
-	margin: 0 0 40px 5.6%;
+.about_team .ext_lists_square_nolink .list a{
+	cursor: default;
 }
+
+
+/* about 团队生活 */
+.about_life{
+
+}
+
+
 
 /* about 发展历程 */
 .about_history{
@@ -628,11 +656,19 @@
 }
 
 
+/* about 人才引进 */
+.about_jods{
+
+}
+
+
+
+/* about  */
 
 
 
 
-/* index */
+
 
 
 

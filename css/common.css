@@ -28,7 +28,10 @@ a:link,a:visited,a:active{
 	min-width: 1000px;
 	/*margin:0 auto;*/
 }
-
+.w1000{
+	width: 1000px;
+	margin:0 auto;
+}
 
 
 /* 公共样式 */
@@ -150,11 +153,12 @@ a:link,a:visited,a:active{
 
 
 .footer{
-
+	background: #e8e8e7;
+	background: #ebebeb;
 }
 
 .footer .info{
-
+	overflow: hidden;
 }
 .footer .info .wrap{
 	margin: 40px auto;
@@ -277,6 +281,7 @@ a:link,a:visited,a:active{
 }*/
 .ext_wrap_bggray:nth-child(2n+1){
 	background: #f3f3f3;
+	/*background: #f4f4f4;*/
 }
 
 
@@ -317,7 +322,6 @@ a:link,a:visited,a:active{
 	width: 23%;
 	/*min-width: 180px;*/
 	/*margin: 0 0 0 50px;*/
-	/*margin: 0 0 20px 2.66%;*/
 	/*margin: 0 0 20px 2.06%;*/
 	margin: 0 0 20px 1.596%;
 }
@@ -325,7 +329,7 @@ a:link,a:visited,a:active{
 
 .mod_lists .list .link{
 	border: 1px solid #838383;
-	border: 0.1% solid #838383;
+	/*border: 0.1% solid #838383;*/
 	position: relative;
 	display: block;
 	border-radius: 6px;
@@ -333,8 +337,9 @@ a:link,a:visited,a:active{
 }
 .mod_lists .list .link .img{
 	display: block;
-	width: 99.9%;
 	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 }
 .mod_lists .list .link .title_wrap{
 	position: absolute;
@@ -434,22 +439,32 @@ a:link,a:visited,a:active{
 }
 
 
-/* ext_lists */
-.ext_lists_square{
+.mod_lists .list .detail{
+	font-size: 1.4em;
+	line-height: 1.6em;
+	height:3.2em;
+	overflow: hidden;
+	margin: 8px 0;
+}
+
+
+
+/* ext_lists 文章没链接 */
+.ext_lists_square_nolink{
 	margin: 20px auto;
 }
-.ext_lists_square .list{
+.ext_lists_square_nolink .list{
 	width: 18%;
 	margin: 0 0 20px 5.6%;
 }
-.ext_lists_square .list .link:hover .title_wrap .title,
-.ext_lists_square .list .link:hover .title_wrap .ico{
+.ext_lists_square_nolink .list .link:hover .title_wrap .title,
+.ext_lists_square_nolink .list .link:hover .title_wrap .ico{
 	color: #fff;
 }
-.ext_lists_square .list .link:hover .title_wrap .title{
+.ext_lists_square_nolink .list .link:hover .title_wrap .title{
 	font-size: 2em;
 }
-.ext_lists_square .list .link:hover .title_wrap .ico{
+.ext_lists_square_nolink .list .link:hover .title_wrap .ico{
 	font-size:2.8em;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -457,6 +472,35 @@ a:link,a:visited,a:active{
 	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
+
+/* ext_lists_article */
+.ext_lists_article{
+	margin: 20px auto;
+}
+.ext_lists_article .list{
+	width: 18%;
+	margin: 0 0 40px 5.6%;
+}
+
+/* 文章详细 */
+.mod_lists_detail{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 按钮 */
@@ -591,6 +635,110 @@ a:link,a:visited,a:active{
 	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00e7000a', endColorstr='#00e7000a');
 }
 
+/* 分页 */
+.mod_page{
+	/*margin: 20px auto; */
+	padding: 20px auto;
+}
+.mod_page .list{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+}
+.mod_page .list .link{
+	display: block;
+	border-radius:4px;
+	font-size: 1.4em;
+	border: 1px solid #f3f3f3;
+	/*border: 1px solid #838383;*/
+	padding:12px 16px;
+	margin: 0 2px;
+	color: #838383;
+	line-height: 1em;
+}
+.mod_page .list .link .ico{
+	/*display: inline-block;*/
+	display: block;
+}
+
+.mod_page .list .link:hover{
+	border: 1px solid #e7000a;
+	background:#e7000a;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#cce7000a', endColorstr='#cce7000a');
+	color: #fff;
+}
+:root .mod_page .list .link:hover{
+	background:#e7000a;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00e7000a', endColorstr='#00e7000a');
+}
+
+.mod_page .list .page_l:active .ico{
+	transform: translate(-2px);
+}
+.mod_page .list .page_r:active .ico{
+	transform: translate(2px);
+}
+
+.mod_page .list .link .ico{
+/*	-webkit-transition:transform .4s ease-out;
+	-moz-transition:transform .4s ease-out;
+	-ms-transition:transform .4s ease-out;
+	-o-transition:transform .4s ease-out;
+	transition:transform .4s ease-out;*/
+}
+.mod_page .list .page_l .ico,
+.mod_page .list .page_r .ico{
+	-webkit-transition:color 0s ease-out,transform .4s ease-out;
+	-moz-transition:color 0s ease-out,transform .4s ease-out;
+	-ms-transition:color 0s ease-out,transform .4s ease-out;
+	-o-transition:color 0s ease-out,transform .4s ease-out;
+	transition:color 0s ease-out,transform .4s ease-out;
+}
+
+
+/*
+
+	全局
+	
+	  	  主色
+	 	  辅色 e7000a
+    	背景色
+    	点睛色
+
+	  字体颜色 
+
+	主标题颜色 e7000a
+	副标题颜色 000
+	  正文颜色 838383
+	
+	  过渡颜色
+
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
+
+		  红色 e7000a
+		  浅红 e63232
+
+	      浅灰 f3f3f3
+		  深灰 3b3b3b
+
+		  边距
+		内填充
+
+*/
+
+
+
+
+
+
+
+
 
 /* banner */
 .mod_banner{
@@ -659,14 +807,12 @@ a:link,a:visited,a:active{
 	/*width: 14px;*/
 	width: 0;
 	height: 0;
-
 	display: block;
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-
 	margin:auto;
 }
 .mod_banner .banner_nav .list:hover{
@@ -874,7 +1020,8 @@ a:link,a:visited,a:active{
 .mod_nav_sub .list .link,
 .mod_banner_wper50 .banner_nav .list,
 .mod_banner_wper50 .banner_nav .list .link,
-.mod_lists .list .title_wrap{
+.mod_lists .list .title_wrap,
+.mod_page .list .link{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
@@ -885,6 +1032,7 @@ a:link,a:visited,a:active{
 
 
 /*
+
 	全局
 	
 	  	  主色
@@ -892,23 +1040,29 @@ a:link,a:visited,a:active{
     	背景色
     	点睛色
 
-
-	
 	  字体颜色 
 
-	主标题颜色 
-	副标题颜色 
+	主标题颜色 e7000a
+	副标题颜色 000
 	  正文颜色 838383
 	
 	  过渡颜色
 
-	主标题大小 000000
-	副标题大小
-	  正文大小
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
 
 		  红色 e7000a
+		  浅红 e63232
 
+	      浅灰 f3f3f3
 		  深灰 3b3b3b
-		  浅灰 f3f3f3
+
+		  边距
+		内填充
 
 */
