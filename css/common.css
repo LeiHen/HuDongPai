@@ -375,6 +375,7 @@ a:link,a:visited,a:active{
 
 	position: relative;
 	top:-209px;
+	/*top: -25%;*/
 }
 .mod_lists .list .link .title_wrap .ico{
 	font-size: 3em;
@@ -433,10 +434,29 @@ a:link,a:visited,a:active{
 }
 
 
-
-
-
-
+/* ext_lists */
+.ext_lists_square{
+	margin: 20px auto;
+}
+.ext_lists_square .list{
+	width: 18%;
+	margin: 0 0 20px 5.6%;
+}
+.ext_lists_square .list .link:hover .title_wrap .title,
+.ext_lists_square .list .link:hover .title_wrap .ico{
+	color: #fff;
+}
+.ext_lists_square .list .link:hover .title_wrap .title{
+	font-size: 2em;
+}
+.ext_lists_square .list .link:hover .title_wrap .ico{
+	font-size:2.8em;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
 
 
 /* 按钮 */
@@ -853,7 +873,8 @@ a:link,a:visited,a:active{
 .mod_nav_sub .list,
 .mod_nav_sub .list .link,
 .mod_banner_wper50 .banner_nav .list,
-.mod_banner_wper50 .banner_nav .list .link{
+.mod_banner_wper50 .banner_nav .list .link,
+.mod_lists .list .title_wrap{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

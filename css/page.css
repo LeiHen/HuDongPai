@@ -564,6 +564,8 @@
 
 
 /* about */
+
+/* about  公司简介 */
 .about_company{
 
 }
@@ -603,12 +605,32 @@
 	margin-top:-50%;
 }
 
-
-
-
 .about_company .content .imgs_wrap{
 	float: right;
 }
+
+/* about  团队 */
+.about_team{
+
+}
+
+.about_team .ext_lists_square .list{
+	margin: 0 0 40px 5.6%;
+}
+
+/* about 发展历程 */
+.about_history{
+
+}
+.about_history .img{
+	margin:0 auto; 
+	display: block;
+}
+
+
+
+
+
 
 /* index */
 
