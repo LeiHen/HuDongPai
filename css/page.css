@@ -152,6 +152,7 @@
 /* index 产品平台 */
 .product_index{
 	overflow: hidden;
+	/*display: block;*/
 }
 .product_index .product_index_wrap{
 	width: 50%;

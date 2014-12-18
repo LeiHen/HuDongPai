@@ -123,48 +123,154 @@ a:link,a:visited,a:active{
 	height: 50px;
 	/*line-height: 50px;*/
 	float: left;
-	margin: 0 10px;
+	margin: 0 2px;
 }
 .nav_mian .ul .list .link{
 	color: #fff;
 	font-size: 1.8em;
-	margin: 8px 6px;
-	padding:8px 0; 
+	/*margin: 8px 6px;*/
+	padding:8px 16px; 
 	line-height: 1em;
+	line-height: 34px;
 	position: relative;
 	display: block;
 	/*background: red;*/
 }
 .nav_mian .ul .list .link .wire{
-	height: 2px;
+	height: 4px;
 	width: 100%;
-	background-color: #e7000a;
+	background-color: #fff;
+	/*background-color: #e7000a;*/
+	/*background-color: #a60007;*/
 	position: absolute;
 	left: 0;
-	bottom: -4px;
-	filter: alpha(opacity=0);
-	opacity: 0;
-}
-.nav_mian .ul .list .link:hover .wire{
+	top: -4px;
+	z-index: 1;
 	bottom: 0px;
-	filter: alpha(opacity=100);
-	opacity: 1;
+
+}
+.nav_mian .ul .list .link .bg_color{
+	height:0%;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+.nav_mian .ul .list .link:hover,
+.nav_mian .ul .list .hover{
+	/*color: #e7000a;*/
+	/*color: #000;*/
+}
+.nav_mian .ul .list .link:hover .wire,
+.nav_mian .ul .list .hover .wire{
+	top: 0;
+}
+.nav_mian .ul .list .link:hover .bg_color,
+.nav_mian .ul .list .hover .bg_color{
+	height: 100%;
+}
+
+.nav_mian .ul .list .link:active .bg_color,
+.nav_mian .ul .list .hover:active .bg_color{
+	height: 100%;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.nav_mian .ul .list .link:active .wire,
+.nav_mian .ul .list .hover:active .wire{
+	top: 100%;
+	/*bottom: 4px;*/
 }
 
 
 /* 导航 三级 */
 .mod_nav_three{
-	border-top:4px solid transparent;
+	/*border-top:4px solid #e7000a;*/
+	width: 160px;
+	margin: 0 20px;
+	padding: 10px 0 0 0;
 }
 .mod_nav_three .list{
-	border-top:2px solid transparent;
+	cursor: pointer;
 }
 .mod_nav_three .list .link{
-
+	color: #838383;
+	font-size: 1.6em;
+	line-height: 2.4em;
+	border-top:3px solid #f3f3f3;
+	border-top:1px solid #f3f3f3;
+	/*border-top:3px solid transparent;*/
+	display: block;
+	position: relative;
+	margin: 4px 0;
+	padding: 0 0 0 0.5em;
+	cursor: pointer;
+}
+.mod_nav_three .list:first-child .link{
+	border-top:1px solid transparent;
 }
 .mod_nav_three .list .link .bg_color{
-
+	
+	/*background: #e7000a;
+	background: #e63232;
+	background: #e63232;*/
+	background: #f3f3f3;
+	width: 100%;
+	height: 0%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	/*opacity: 0.8;*/
+	/*filter: alpha(opacity=);*/
 }
+.mod_nav_three .list .link .wire{
+	height: 0px;
+	width: 100%;
+	background-color: #8a0006;
+	background-color: #3b3b3b;
+	/*background-color: #e7000a;*/
+	/*background-color: #a60007;*/
+	position: absolute;
+	left: 0;
+	top: -1px;
+	z-index: 1;
+}
+.mod_nav_three .list .link:hover,
+.mod_nav_three .list .hover{
+	color: #fff;
+	color: #000;
+	padding: 0 0 0 1.5em;
+}
+.mod_nav_three .list .link:hover .bg_color,
+.mod_nav_three .list .hover .bg_color{
+	height: 100%;
+}
+.mod_nav_three .list .link:hover .wire,
+.mod_nav_three .list .hover .wire{
+	height: 3px;
+}
+.mod_nav_three .list .link:active,
+.mod_nav_three .list .hover:active{
+	/*background: #8a0006;*/
+	cursor: pointer;
+	color: #fff;
+	background: #e7000a;
+}
+.mod_nav_three .list .link:active .wire,
+.mod_nav_three .list .hover:active .wire{
+	background: #e7000a;
+	background: #8a0006;
+	top: auto;
+	top: 100%;
+	bottom: 0;
+	/*bottom:0px;*/
+}
+
 .mod_nav_three .list{
 
 }
@@ -179,6 +285,44 @@ a:link,a:visited,a:active{
 }
 
 
+/*
+
+	全局
+	
+	  	  主色
+	 	  辅色 e7000a
+    	背景色
+    	点睛色
+
+	  字体颜色 
+
+	主标题颜色 e7000a
+	副标题颜色 000
+	  正文颜色 838383
+	
+	  过渡颜色
+
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
+
+		  红色 e7000a
+		  浅红 e63232
+		  深色 8a0006
+		       a60007
+
+
+	      浅灰 f3f3f3
+		  深灰 3b3b3b
+
+		  边距
+		内填充
+
+*/
 
 
 
@@ -613,53 +757,6 @@ a:link,a:visited,a:active{
 }
 
 
-
-
-
-
-/*
-	全局
-	
-	  	  主色
-	 	  辅色 e7000a
-    	背景色
-    	点睛色
-
-	  字体颜色 
-
-	主标题颜色 e7000a
-	副标题颜色 000
-	  正文颜色 838383
-	
-	  过渡颜色
-
-	主标题大小 30px
-	副标题大小 18px
-	  正文大小 14px
-
-	主标题行高 30px
-	副标题行高 18px
-	  正文行高 1.8em
-
-		  红色 e7000a
-		  浅红 e63232
-
-	      浅灰 f3f3f3
-		  深灰 3b3b3b
-
-		  边距
-		内填充
-
-*/
-
-
-
-
-
-
-
-
-
 /* 按钮 */
 .mod_btn{
 	/*border: 2px solid #838383;*/
@@ -880,6 +977,8 @@ a:link,a:visited,a:active{
 
 		  红色 e7000a
 		  浅红 e63232
+		  深色 8a0006
+		       a60007
 
 	      浅灰 f3f3f3
 		  深灰 3b3b3b
@@ -888,10 +987,6 @@ a:link,a:visited,a:active{
 		内填充
 
 */
-
-
-
-
 
 
 
@@ -1134,9 +1229,7 @@ a:link,a:visited,a:active{
 	left: -50%;
 	/*top: 0;*/
 	/*bottom: 0;*/
-
 	bottom: -12px;
-	
 	/*border: 4px solid rgba(0,0,0,.4);*/
 	border: 4px solid #000;
 	border: 4px solid rgba(0,0,0,.6);
@@ -1169,6 +1262,7 @@ a:link,a:visited,a:active{
 .nav_mian .ul .list,
 .nav_mian .ul .list .link,
 .nav_mian .ul .list .link .wire,
+.nav_mian .ul .list .link .bg_color,
 .mod_banner .banner_nav .list,
 .mod_banner .banner_nav .list .link,
 .footer .info .wrap .list .ico,
@@ -1188,7 +1282,10 @@ a:link,a:visited,a:active{
 .mod_banner_wper50 .banner_nav .list,
 .mod_banner_wper50 .banner_nav .list .link,
 .mod_lists .list .title_wrap,
-.mod_page .list .link{
+.mod_page .list .link,
+.mod_nav_three .list .link,
+.mod_nav_three .list .link .bg_color,
+.mod_nav_three .list .link .wire{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
@@ -1225,6 +1322,8 @@ a:link,a:visited,a:active{
 
 		  红色 e7000a
 		  浅红 e63232
+		  深色 8a0006
+		       a60007
 
 	      浅灰 f3f3f3
 		  深灰 3b3b3b
