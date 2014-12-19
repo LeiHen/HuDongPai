@@ -192,10 +192,12 @@ a:link,a:visited,a:active{
 	/*border-top:4px solid #e7000a;*/
 	width: 160px;
 	margin: 0 20px;
-	padding: 10px 0 0 0;
+	/*padding: 10px 0 0 0;*/
+	padding: 0;
 }
 .mod_nav_three .list{
 	cursor: pointer;
+	overflow: hidden;
 }
 .mod_nav_three .list .link{
 	color: #838383;
@@ -206,7 +208,7 @@ a:link,a:visited,a:active{
 	/*border-top:3px solid transparent;*/
 	display: block;
 	position: relative;
-	margin: 4px 0;
+	/*margin: 4px 0;*/
 	padding: 0 0 0 0.5em;
 	cursor: pointer;
 }
@@ -270,61 +272,6 @@ a:link,a:visited,a:active{
 	bottom: 0;
 	/*bottom:0px;*/
 }
-
-.mod_nav_three .list{
-
-}
-.mod_nav_three .list{
-
-}
-.mod_nav_three .list{
-
-}
-.mod_nav_three .list{
-
-}
-
-
-/*
-
-	全局
-	
-	  	  主色
-	 	  辅色 e7000a
-    	背景色
-    	点睛色
-
-	  字体颜色 
-
-	主标题颜色 e7000a
-	副标题颜色 000
-	  正文颜色 838383
-	
-	  过渡颜色
-
-	主标题大小 30px
-	副标题大小 18px
-	  正文大小 14px
-
-	主标题行高 30px
-	副标题行高 18px
-	  正文行高 14px
-
-		  红色 e7000a
-		  浅红 e63232
-		  深色 8a0006
-		       a60007
-
-
-	      浅灰 f3f3f3
-		  深灰 3b3b3b
-
-		  边距
-		内填充
-
-*/
-
-
 
 
 
@@ -756,6 +703,24 @@ a:link,a:visited,a:active{
 	margin: 10px 20px;
 }
 
+/*  */
+.mod_article_detail{
+	padding: 0;
+	overflow: hidden;
+}
+.mod_article_detail .wrap{
+	overflow: hidden;
+
+}
+.mod_article_detail .mod_nav_three{
+	float: left;
+}
+.mod_article_detail .mod_lists_detail{
+	/*float: right;*/
+	float: left;
+	width: 760px;
+	margin: 0 20px;
+}
 
 /* 按钮 */
 .mod_btn{
@@ -891,7 +856,7 @@ a:link,a:visited,a:active{
 
 /* 分页 */
 .mod_page{
-	/*margin: 20px auto; */
+	margin: 40px auto; 
 	padding: 20px auto;
 }
 .mod_page .list{
@@ -1257,8 +1222,6 @@ a:link,a:visited,a:active{
 .header .logo .a_logo .icon_logo,
 .header .logo .a_logo .icon_logofont,
 .header .logo .slogan,
-.nav_mian,
-.nav_mian .ul,
 .nav_mian .ul .list,
 .nav_mian .ul .list .link,
 .nav_mian .ul .list .link .wire,
