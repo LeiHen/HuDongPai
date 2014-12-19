@@ -618,6 +618,8 @@ a:link,a:visited,a:active{
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto 80px auto;
+	/*padding: */
+	/*padding-left:200px; */
 	/*padding: 0 auto 80px auto;*/
 }
 .mod_lists_detail .img_bg{
@@ -706,6 +708,7 @@ a:link,a:visited,a:active{
 /*  */
 .mod_article_detail{
 	padding: 0;
+	/*padding-left: 200px;*/
 	overflow: hidden;
 }
 .mod_article_detail .wrap{
