@@ -400,18 +400,9 @@
 	
 }
 .solution_weibo .content{
-	background-image: url(../images/wechat.png);
-}
-
-
-/* 微信互动营销 */
-.solution_wechat{
-	
-}
-.solution_wechat .content{
 	font-size: 0;
 }
-.solution_wechat .content .list{
+.solution_weibo .content .list{
 	border-top:1px solid #838383;
 	border-left:1px solid #838383;
 	width: 33%;
@@ -421,25 +412,31 @@
 	+zoom:0; 
 }
 
-.solution_wechat .content .list:nth-child(3n){
+.solution_weibo .content .list:nth-child(3n){
 	border-top:none;
 	border-left:1px solid #838383; 
 }
 
-
-
-.solution_wechat .content .list .circle{
+.solution_weibo .content .list .circle{
 	
 }
-.solution_wechat .content .list .num{
+.solution_weibo .content .list .num{
 	
 }
-.solution_wechat .content .list .solution_weibo_title{
+.solution_weibo .content .list .solution_weibo_title{
 	font-size: 1.4em;
 	text-align: center;
 }
 
 
+
+/* 微信互动营销 */
+.solution_wechat{
+	
+}
+.solution_wechat .content{
+	background-image: url(../images/wechat.png);
+}
 
 
 
