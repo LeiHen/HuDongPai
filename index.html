@@ -63,7 +63,7 @@
 	    <!-- header[[ -->
 		
 		<!-- banner[[ -->
-		<div class="mod_banner w_min banner_index">
+		<div class="mod_banner w_min banner_index" id="bannerIndex">
             <ul class="imgs">
                 <li class="list">
                     <a href="#" class="link">
@@ -178,8 +178,10 @@
                 <a class="product_index_wrap paiplus" href="platform.html">
                     <div class="product_content" >
                         <div class="txt">社会化客户管理系统</div>
-                        <div class="detail">
-                            <span class="detail_center">π+社会化客户管理系统包含：SCRM 社会化客户关系管理系统、 SDA 社会化数据分析系统和SAM 社会化营销活动平台，能够全面实现品牌社会化营销的智能化、互动化、精准化，致力于数字商业闭环，为大中型企业社会化营销打造最全面的”粉丝管家”。</span>
+                        <div class="detail_wrap">
+                            <div class="detail">
+                                <span class="detail_center">π+社会化客户管理系统包含：SCRM 社会化客户关系管理系统、 SDA 社会化数据分析系统和SAM 社会化营销活动平台，能够全面实现品牌社会化营销的智能化、互动化、精准化，致力于数字商业闭环，为大中型企业社会化营销打造最全面的”粉丝管家”。</span>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -187,8 +189,10 @@
                 <a class="product_index_wrap aiwangpai" href="#">
                     <div class="product_content" >
                         <div class="txt">游戏互动营销平台</div>
-                        <div class="detail">
-                            <span class="detail_center">爱玩派是互动派开发的国内首个基于移动社交的游戏营销平台，它将品牌传播融入互动娱乐之中，通过有奖游戏提升用户的服务体验，激发粉丝主动分享传播，提升移动互联网上的品牌活跃度，有效提高转化率，实现资源最大化利用。</span>
+                        <div class="detail_wrap">
+                            <div class="detail">
+                                <span class="detail_center">爱玩派是互动派开发的国内首个基于移动社交的游戏营销平台，它将品牌传播融入互动娱乐之中，通过有奖游戏提升用户的服务体验，激发粉丝主动分享传播，提升移动互联网上的品牌活跃度，有效提高转化率，实现资源最大化利用。</span>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -469,14 +473,14 @@
         <script src="js/base.js"></script>
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
-        
-		<script type="text/javascript">	
-			//初始化 统一入口
-			function mianInit(){
+        <script type="text/javascript">	
+			//初始化 当前统一入口
+			function init(){
 
 			}
-			mianInit();
+			init();
 		</script>
+		
 		
 		<!-- css3兼容低版本 -->
 		<!--[if lte IE 8]>
@@ -497,12 +501,15 @@
         <script type="text/javascript" src="js/hack/font-ie7.js"></script>
         <![endif]-->
         
-        <script type="text/javascript">	
-			//初始化 当前统一入口
-			function init(){
 
+		
+		<script type="text/javascript">	
+			//初始化 统一入口
+			function mianInit(){
+                slide('bannerIndex');
 			}
-			init();
+			mianInit();
 		</script>
+		
 	</body>
 </html>

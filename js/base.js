@@ -225,7 +225,7 @@ function attrStyle(elem,attr){
 * @author	:si
 * @dependent:调试函数
 */
-function consoleDebug(x) {
+function csoleBug(x) {
     console.log(x);
 }
 /* @end **/
