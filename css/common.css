@@ -341,7 +341,7 @@ a:link,a:visited,a:active{
 }
 
 .footer .QR_wrap{
-	padding:6px 25px 0 0;
+	padding:6px 55px 0 0;
 }
 
 
@@ -563,6 +563,7 @@ a:link,a:visited,a:active{
 
 .mod_lists .list .link .title_wrap .title{
 	/*transition:all 0.4s ease-out 0.8s;*/
+	padding: 0 10px;
 
 }
 .mod_lists .list .link .title_wrap .ico{
@@ -917,44 +918,38 @@ a:link,a:visited,a:active{
 	transition:color 0s ease-out,transform .4s ease-out;
 }
 
+/* 返回 */
+.mod_top_btn{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom:82px;
+	right: 10px;
+	background: #000;
+	background: rgba(0,0,0,.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#99000000', endColorstr='#99000000');
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	cursor: pointer;
+	text-align: center;
+}
+.mod_top_btn .ico{
+	/*background: #000;*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 4em;
+	line-height: 50px;
+	/*text-align: center;*/
+}
+.mod_top_btn:hover{
+	background: rgba(0,0,0,.8);
+}
+.mod_top_btn:hover .ico{
+	text-shadow:4px 4px 0px rgba(0,0,0,.6);
+}
 
-/*
 
-	全局
-	
-	  	  主色
-	 	  辅色 e7000a
-    	背景色
-    	点睛色
-
-	  字体颜色 
-
-	主标题颜色 e7000a
-	副标题颜色 000
-	  正文颜色 838383
-	
-	  过渡颜色
-
-	主标题大小 30px
-	副标题大小 18px
-	  正文大小 14px
-
-	主标题行高 30px
-	副标题行高 18px
-	  正文行高 14px
-
-		  红色 e7000a
-		  浅红 e63232
-		  深色 8a0006
-		       a60007
-
-	      浅灰 f3f3f3
-		  深灰 3b3b3b
-
-		  边距
-		内填充
-
-*/
 
 
 
@@ -969,7 +964,11 @@ a:link,a:visited,a:active{
 }
 .mod_banner .imgs{
 	width: 400%;
+	width: 100%;
 	overflow: hidden;
+	position: relative;
+	/*left: -100%;*/
+
 }
 .mod_banner .imgs .list{
 	width: 25%;
@@ -1251,7 +1250,9 @@ a:link,a:visited,a:active{
 .mod_page .list .link,
 .mod_nav_three .list .link,
 .mod_nav_three .list .link .bg_color,
-.mod_nav_three .list .link .wire{
+.mod_nav_three .list .link .wire,
+.mod_top_btn,
+.mod_top_btn .ico{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

@@ -86,20 +86,22 @@
                     </a>
                 </li>
                 
+<!--
                 <li class="list">
                     <a href="#" class="link">
                         <img src="images/banner/index/img_04_1920x668.jpg" alt="" title="" class="img">
                         <div class="conter"></div>
                     </a>
                 </li>
+-->
                    
             </ul>
 
             <ul class="banner_nav">
-                <li class="list hover"><a class="link" href="#"></a></li>
-                <li class="list"><a class="link" href="#"></a></li>
-                <li class="list"><a class="link" href="#"></a></li>
-                <li class="list"><a class="link" href="#"></a></li>
+                <li class="list hover"><a class="link"></a></li>
+                <li class="list"><a class="link"></a></li>
+                <li class="list"><a class="link"></a></li>
+<!--                <li class="list"><a class="link"></a></li>-->
             </ul>
             
 		</div>
@@ -188,7 +190,7 @@
                 
                 <a class="product_index_wrap aiwangpai" href="#">
                     <div class="product_content" >
-                        <div class="txt">游戏互动营销平台</div>
+                        <div class="txt">国内首家娱乐互动服务平台</div>
                         <div class="detail_wrap">
                             <div class="detail">
                                 <span class="detail_center">爱玩派是互动派开发的国内首个基于移动社交的游戏营销平台，它将品牌传播融入互动娱乐之中，通过有奖游戏提升用户的服务体验，激发粉丝主动分享传播，提升移动互联网上的品牌活跃度，有效提高转化率，实现资源最大化利用。</span>
@@ -465,6 +467,12 @@
 	        
 	    </footer>
 	    <!-- footer]] -->
+       
+        <!-- 返回顶部[[ -->
+        <a class="mod_top_btn" id="topBtn" title="返回顶部">
+            <span class="ico icon_caret_up_2"></span>
+        </a>
+        <!-- 返回顶部]] -->
 
        
         <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
@@ -476,7 +484,7 @@
         <script type="text/javascript">	
 			//初始化 当前统一入口
 			function init(){
-
+                toTop("topBtn");
 			}
 			init();
 		</script>
@@ -506,7 +514,9 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function mianInit(){
-                slide('bannerIndex');
+                GLOBAL.namespace("SLIDE.INDEX");
+                
+                slide('bannerIndex',1000,5000);
 			}
 			mianInit();
 		</script>
