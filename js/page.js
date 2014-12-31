@@ -5,14 +5,14 @@
 
 
 /**
-* @name		:mianInit
+* @name		:init
 * @author	:Nice
 * @dependent:总初始化
 */
-function mianInit(){
-	
+function init(){
+	toTop("topBtn");
 }
-mianInit();
+init();
 /* @end **/
 
 

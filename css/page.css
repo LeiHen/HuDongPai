@@ -931,10 +931,172 @@
 .about_history{
 
 }
-.about_history .img{
-	margin:0 auto; 
+.history_wrap{
+	height: 401px;
+	position: relative;
+}
+
+.history_wrap .wire{
+	background: #838383;
+	height:1px;
+	width: 100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
 	display: block;
 }
+
+
+.history_wrap .year_wrap{
+	position: relative;
+	top:50%;
+	margin-top: -42px;
+	height: 84px;
+	/*width: auto;*/
+	/*position: absolute;*/
+	display: table-cell;
+	/*display: inline-block;*/
+	float: left;
+}
+
+.history_wrap .circle{
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #e7000a;
+	display:inline-block;
+	color: #fff;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #fff;
+	top:0;
+	bottom: 0;
+	margin: auto;
+
+
+	/*position: absolute;*/
+
+}
+
+/*.history_wrap .circle:nth-child(2n+1){
+
+}*/
+
+
+.history_wrap .year{
+	width: 80px;
+	height: 80px;
+	font-size: 2.5em;
+	line-height: 80px;
+
+
+}
+.history_wrap .month{
+	font-size: 1.8em;
+}
+.history_wrap .born{
+	font-size: 3em;
+}
+
+.history_wrap .info{
+	position: relative;
+	font-size: 0.7777em;
+	height: 200px;
+	width: 230px;
+	overflow: hidden;
+	left: 50%;
+	z-index: -1;
+}
+.history_wrap .info .side{
+	height: 120px;
+	width: 180px;
+}
+.history_wrap .info .side .txt{
+	color: #838383;
+	line-height: 1.7em;
+	text-align: left;
+}
+
+
+.history_wrap .info_tr{
+	border-left:1px dashed #838383;
+	top:-227px;
+	/*top: -100%;*/
+	/*bottom: 226px;*/
+	left: 50%;
+}
+.history_wrap .info_tr .side{
+	margin: 0px 0 0 20px;
+	padding: 0 0 0 20px;
+	border-left:3px solid #e7000a;
+}
+
+.history_wrap .info_br{
+	border-left:1px dashed #838383;
+	top: 0;
+}
+.history_wrap .info_br .side{
+	margin: 80px 0 0 20px;
+	padding: 0 0 0 20px;
+	border-left:3px solid #e7000a;
+}
+
+
+.history_wrap .info_tl{
+	border-right:1px dashed #838383;
+	top:-227px;
+	left: -206px;
+}
+.history_wrap .info_tl .side{
+	margin: 0px 20px 0 0;
+	padding: 0 20px 0 0;
+	border-right:3px solid #e7000a;
+}
+
+
+.history_wrap .info_bl{
+	border-right:1px dashed #838383;
+	top:0;
+	left: -206px;
+}
+.history_wrap .info_bl .side{
+	margin: 80px 20px 0 0;
+	padding: 0 20px 0 0;
+	border-right:3px solid #e7000a;
+}
+
+.history_wrap .year_wrap .year .info_tl,
+.history_wrap .year_wrap .year .info_tr{
+	top:-242px;
+}
+
+.history_wrap .year_wrap .year .info_tl .txt,
+.history_wrap .year_wrap .year .info_bl .txt,
+.history_wrap .year_wrap .year .info_tr .txt,
+.history_wrap .year_wrap .year .info_tr .txt{
+	font-size: 0.7em;
+}
+
+.history_wrap .year_wrap .born .info_tl .txt,
+.history_wrap .year_wrap .born .info_bl .txt,
+.history_wrap .year_wrap .born .info_tr .txt,
+.history_wrap .year_wrap .born .info_br .txt{
+	font-size: 0.58em;
+	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
+
+}
+
+.history_wrap .month:nth-child(2n+1){
+	margin-left: 230px;
+}
+
+
+/*.about_history .img{
+	margin:0 auto; 
+	display: block;
+}*/
 
 
 /* about 人才引进 */

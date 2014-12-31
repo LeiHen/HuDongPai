@@ -43,8 +43,10 @@ function toTop(ID){
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
             $("#"+ID).fadeIn(600);
+            // $("#"+ID).show(600);
             // $("#goReturn").stop().animate({bottom:80},800); 
-        } else {         
+        } else {
+            // $("#"+ID).hide(800);
             $("#"+ID).fadeOut(600);
             // $("#goReturn").stop().animate({bottom:25},800);
         }
