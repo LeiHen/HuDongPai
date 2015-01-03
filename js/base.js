@@ -21,7 +21,7 @@ GLOBAL.namespace=function(str){
 * @author	:si
 * @dependent:去空白字符
 */
-function get_previousSibling(n) {
+function getPreviousSibling(n) {
     var y = n.previousSibling;
     while (y.nodeType != 1) {
         y = y.previousSibling;

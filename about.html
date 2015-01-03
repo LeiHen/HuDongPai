@@ -95,8 +95,8 @@
                    </div>
 
                   <!-- banner about_company [[ -->
-                  <div class="mod_banner_wper50 imgs_wrap">
-                        <ul class="imgs">
+                  <div class="mod_banner_wper50 imgs_wrap" id="aboutRoll">
+                        <ul class="imgs pr">
                             <li class="list"><img src="images/banner/about/img_01_460x287.jpg" alt="" title="" class="img"></li>
                             <li class="list"><img src="images/banner/about/img_02_460x287.jpg" alt="" title="" class="img"></li>
                             <li class="list"><img src="images/banner/about/img_03_460x287.jpg" alt="" title="" class="img"></li>
@@ -105,10 +105,10 @@
                         </ul>
 
                         <ul class="banner_nav">
-                            <li class="list hover"><a class="link" href="#"></a></li>
-                            <li class="list"><a class="link" href="#"></a></li>
-                            <li class="list"><a class="link" href="#"></a></li>
-                            <li class="list"><a class="link" href="#"></a></li>
+                            <li class="list hover"><a class="link"></a></li>
+                            <li class="list"><a class="link"></a></li>
+                            <li class="list"><a class="link"></a></li>
+                            <li class="list"><a class="link"></a></li>
                         </ul>
 
                     </div>
@@ -132,14 +132,6 @@
                 </div>
                 <div class="sub_title">互动派由以下数位具有多年互动数字营销经验人士领航</div>
                 
-<!--
-                <ul class="">
-                  <li class="list">
-                      div.
-                  </li>
-                       
-                </ul>
--->
                 <div class="mod_wrap_content content">
                     <ul class="mod_lists ext_lists_square_nolink clearFix">
                         <li class="list">
@@ -358,7 +350,9 @@ CTO" class="img">
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function mianInit(){
-
+                GLOBAL.namespace("SLIDE.INDEX");
+                //图片滚动
+                slide('aboutRoll',1000,5000);
 			}
 			mianInit();
 		</script>
@@ -383,12 +377,6 @@ CTO" class="img">
         <script type="text/javascript" src="js/hack/font-ie7.js"></script>
         <![endif]-->
         
-        <script type="text/javascript">	
-			//初始化 当前统一入口
-			function init(){
 
-			}
-			init();
-		</script>
 	</body>
 </html>

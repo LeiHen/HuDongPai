@@ -150,26 +150,26 @@
                    </li>
 -->
                    
-                   <li class="list list1">
+                   <li class="list list1 listBL listBT">
                        <div class="circle">
                            <span class="num">1</span>
                        </div>
                        <h3 class="solution_weibo_title">通过热点话题推广客户品牌</h3>
                    </li>
-                   <li class="list list2">
+                   <li class="list list2 listBT">
                        <div class="circle">
                            <span class="num">2</span>
                        </div>
                        <h3 class="solution_weibo_title">客户官方微博运营</h3>
                    </li>
-                   <li class="list list3">
+                   <li class="list list3 listBT">
                        <div class="circle">
                            <span class="num">3</span>
                        </div>
                        <h3 class="solution_weibo_title">打通微博、微信、博客等多个社交平台</h3>
                    </li>
                    
-                   <li class="list list4">
+                   <li class="list list4 listBL">
                        <div class="circle">
                            <span class="num">4</span>
                        </div>
@@ -413,6 +413,13 @@
                     });    
                 }
             });
+            
+            //隔行换色
+            $(".ext_wrap_bggray:even").addClass("ext_wrap_bggray_interleave");
+            
+            //去掉微博边框线
+            $(".solution_weibo .content .list:nth-child(3n+1)").addClass("listBL");
+            
         </script>
         
         <![endif]-->
