@@ -36,9 +36,9 @@ function addFavorite() {
 function slide(ID,transitionTime,time){
     // ID='bannerIndex';
 
-    if (!isObj(transitionTime)) {
-        var transitionTime=5000;
-    };
+    // if (!isObj(transitionTime)) {
+    //     var transitionTime=5000;
+    // };
     
     var wrap=$("#"+ID);
     var imgs=wrap.children(".imgs");
@@ -63,7 +63,6 @@ function slide(ID,transitionTime,time){
             left: -i * 100 + '%'
         }, transitionTime)
 
-        // var eNavLi.children(".list")
         eNavLi.removeClass('hover');
         $(eNavLi[i]).addClass('hover');
 
@@ -95,26 +94,10 @@ function slide(ID,transitionTime,time){
         transitionTime:transitionTime
     }
     eNavLi.click(obj,btnNav);
-    // btnNav(eNavLi,ID,imgs,transitionTime);
 
     setInterval(function(){
         delay(imgs,eNavLi,transitionTime,imgL);
     },time);
-
-
-    // var x=wrap.html();
-    // csoleBug(Imgs.html());
-
-    // var x='SLIDE.INDEX.'+ID=0;
-    
-    
-    // if (ID=="W") {
-        // GLOBAL.SLIDE.INDEX.ID=GLOBAL.SLIDE.INDEX.ID+2;
-        // console.log('我是W')
-    // };
-
-    // csoleBug(GLOBAL.SLIDE.INDEX.ID);
-
 }
 
 /* @end **/

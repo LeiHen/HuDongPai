@@ -819,7 +819,7 @@
 
 .nav_t{
 	/*font-size: 10px;*/
-	padding: 0px 5.57142857142857%;
+	padding: 20px 5.57142857142857%;
 }
 .nav_t .list{
 	display: inline-block;
@@ -1007,7 +1007,6 @@
 	margin: auto;*/
 	position: relative;
 	z-index: 1;
-
 }
 
 
